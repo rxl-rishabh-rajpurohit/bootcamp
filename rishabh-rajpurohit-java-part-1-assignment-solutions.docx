@@ -1,0 +1,73 @@
+﻿Rishabh Rajpurohit
+Java Part-1 Assignment Solutions
+
+A1. 
+Java is a ‘compiled plus interpreted’ language. This means that when we run javac command, the javac executable first compiles the java code to bytecode which ends with .class. Then whenever we have to run the java bytecode, we run java <bytecode file-name> command to run java code. To run java program we only need JRE or Java Run-Time Environment, which contains JIT and other classes to interpret .class file and run java program. JIT is Just in time compiler. So .class file can be transferred from one OS to another OS and can be run using JRE for its specific Platform. We only had to write the code once.
+
+A2.
+Java is technically pass by value. When we use primitive types, java uses pass by value and makes a copy of the arguments. When we use Object types in arguments of methods, java creates copy of references of objects. The copies still point to the same object though. The changes are not reflected back if we change the object itself to refer some other location or object. Changes are reflected back if we do not assign reference to a new location or object.
+
+A3.
+public class Hello {
+	public static void main(String args[]){
+	char d = 'd';
+	d+=3;
+	System.out.println("'d' + 3 = "+d);
+	}
+}
+
+output: ‘d’ + 3 = g
+
+
+A4.
+A byte is 8bits.
+
+
+A5.
+char d=”d” will have error because we are using string literal.
+
+float has lesser precision so this will give lossy compression error, i.e. from double to float.
+
+int i=34 will run without any errors.
+
+Byte b = 257 will give incompatible type error because 257 is a little large to store in a byte.
+
+Boolean ispresent=true will run successfully.
+
+
+A6.
+a)2+4*3-7			= 7	 
+c)2+(4*3)-7			= -24 
+b)(2+4)*(3-7)		= 7 
+d)((2+4)*3)-7)		= error
+
+
+A7.
+int i=5; int j=10;
+while(i<j){} //will compile
+while(i) {} //will not compile because while needs boolean values.
+while(i=5) {}//will not compile ‘’’’
+while((i=12)!=5) {}//will compile
+
+A8.
+4%3=1
+
+
+A9.
+if(i>j){}//compile without error
+if(i>j>k){}//compilation error
+if(i>j&&i>k){}//compile without error
+if(i>j&&>k){}//compilation error
+
+A10.
+Output will be:
+default
+two
+
+A11.
+Output will be
+0
+1
+
+A12.
+30
